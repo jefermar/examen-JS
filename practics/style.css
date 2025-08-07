@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #ff0000;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+.containerBD {
+  background-color: #daff06e0; /* Fondo */
+  border-radius: 50px;       /* Bordes redondeados */
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+  padding: 24px;             /* Espaciado interno cómodo */
+  margin: 16px auto;         /* Separación con otros elementos */
+  max-width: 700px;          /* Limita el ancho para mantener forma de card */
+  transition: transform 0.2s ease, box-shadow 0.5s ease;
+}
+
+/* Efecto hover moderno */
+.containerBD:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .containerBD {
+    padding: 16px;
+    margin: 12px;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+#filter {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+#habits-container > div {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#habits-container strong {
+  font-size: 18px;
+  color: #222;
+}
+
+#habits-container button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#habits-container button:nth-child(2) {
+  background: #28a745;
+  color: white;
+}
+
+#habits-container button:nth-child(3) {
+  background: #ffc107;
+  color: white;
+}
+
+#habits-container button:nth-child(4) {
+  background: #dc3545;
+  color: white;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#total-points {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#avatar {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  background: #fff;
+}
+#resetButton {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#resetButton:hover {
+  background-color: #e60000;
+}

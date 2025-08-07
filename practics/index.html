@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Hábitos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="containerBD">
+        <h1>Gestión de Hábitos</h1>
+        //Formulario para agregar nuevos hábitos
+        <form id="habit-form">
+            <input type="text" id="habit-name" placeholder="Nuevo hábito" required />
+            <button type="submit">Agregar</button>
+        </form>
+        //Filtro de hábitos
+        <input type="text" id="filter" placeholder="Filtrar hábitos..." />
+
+        <div id="habits-container"></div>
+        //Contador de puntos + Avatar
+        <h2>Puntos totales: <span id="total-points">0</span></h2>
+        <img id="avatar" src="/img/fase1.jpeg" alt="Avatar" width="100" />
+
+        //limpia localStorage y reinicia la app
+        <button onclick="resetApp()" id="resetButton">Reiniciar Nivel</button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
